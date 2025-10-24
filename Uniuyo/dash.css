@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #d4ccf2;
+  color: #333;
+}
+
+header {
+  background-color: #7159c1;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header input {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  width: 300px;
+}
+
+nav a {
+  color: #ddd;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.greeting {
+  text-align: left;
+  padding: 40px 30px 10px;
+}
+
+.greeting h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.greeting h1 span {
+  color: #4c2bd9;
+}
+
+.modules-heading {
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modules {
+  display: flex;
+  gap: 20px;
+  padding: 0 30px 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  width: 220px;
+  border-radius: 8px;
+  overflow: hidden;
+
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.card p {
+  margin: 0 0 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.stars {
+ font-size: 14px;
+  padding-bottom: 10px;
+  color: #f39c12;
+}
+
+
+
