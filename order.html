@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+           <a href="index.html" class="logo" ><img style="width: 90px; margin-left: 30px;" src="images/michlogo.png" alt="logo"></a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#guide">Guide</a></li> 
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cart.html">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed - Mich Glow</title>
+    <link rel="stylesheet" href="order.css"> 
+    <link rel="stylesheet" href="project.css"> 
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">Mich Glow</div>
+        <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="guide.html">Tips & Guide</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="cart.html" class="cart-icon">Cart (0)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container order-main">
+        
+        <section class="order-confirmation-header" style="text-align: center; padding: 40px 0;">
+            <h1 style="color: var(--color-peru);">Order Confirmed!</h1>
+            <p style="font-size: 1.2em; color: var(--color-muted-olive); font-weight: 500;">
+                Thank you for choosing Mich Glow. Your order is being prepared for shipment.
+            </p>
+            <p>Your Order Number is: <strong style="color: var(--color-dark-text);">#MG20251114-0042</strong></p>
+        </section>
+
+        <div class="order-details-layout">
+            
+            <section class="order-summary-block">
+                <h2 style="color: var(--color-muted-olive);">Order Summary</h2>
+                
+                <div class="order-items-list">
+                    
+                    <div class="order-item">
+                        <img src="/images/glow-serum-bottle.jpg" alt="Glow Serum" class="item-thumb">
+                        <div class="item-details">
+                            <p class="item-name">Mich Glow Glow Serum</p>
+                            <p class="item-qty">Qty: 1</p>
+                            <p class="item-price">$45.00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="order-item">
+                        <img src="https://via.placeholder.com/60x60?text=Cleanser" alt="Hydrating Cleanser" class="item-thumb">
+                        <div class="item-details">
+                            <p class="item-name">Hydrating Cleanser</p>
+                            <p class="item-qty">Qty: 2</p>
+                            <p class="item-price">$28.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="financial-breakdown">
+                    <p>Subtotal: <span>$101.00</span></p>
+                    <p>Shipping: <span>$0.00 (Free Shipping)</span></p>
+                    <p>Tax (8%): <span>$8.08</span></p>
+                    <p class="order-total">Order Total: <span style="color: var(--color-peru);">$109.08</span></p>
+                </div>
+            </section>
+            
+            <section class="shipping-payment-block">
+                
+                <div class="info-card">
+                    <h3 style="color: var(--color-peru);">Shipping Details</h3>
+                    <p><strong>Status:</strong> Processing</p>
+                    <p><strong>Shipping Method:</strong> Standard (5-7 days)</p>
+                    <p><strong>Estimated Delivery:</strong> Nov 20 - Nov 22</p>
+                    <p class="address">
+                        [Customer Name]<br>
+                        123 Glow Street<br>
+                        Skincare City, CA 90210<br>
+                        United States
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3 style="color: var(--color-peru);">Payment Method</h3>
+                    <p>Visa ending in 4242</p>
+                    <p>Paid on: Nov 14, 2025</p>
+                </div>
+                
+                <div class="info-card">
+                    <a href="#" class="btn" style="width: 100%; text-align: center;">Track Your Package</a>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mich Glow. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

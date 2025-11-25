@@ -7,16 +7,39 @@
 </head>
 <body>
 
-    <header>
-        <a href="product.html" class="logo" ><img style="width: 90px; margin-left: 30px;" src="images/michlogo.png" alt="logo"></a>
+    <!-- <header>
+           <a href="index.html" class="logo" ><img style="width: 90px; margin-left: 30px;" src="images/michlogo.png" alt="logo"></a>
+
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
+                <li><a href="order.html">Order</a></li> 
                 <li><a href="about.html">About Us</a></li>
-                <li class="cart-icon"><a href="cart.html">Cart (1)</a></li>
+                <li><a href="cart.html">Cart (0)</a></li>
             </ul>
         </nav>
-    </header>
+    </header> -->
+    <header>
+    <a href="index.html" class="logo" ><img style="width: 90px; margin-left: 30px;" src="images/michlogo.png" alt="logo"></a>
+
+    <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+    </button>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="order.html">Order</a></li> 
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">Cart (0)</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main class="product-page-main">
         
@@ -96,7 +119,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Mich Glow. All rights reserved.</p>
+        <p>&copy; 2023 <span>MICH GLOW</span>. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

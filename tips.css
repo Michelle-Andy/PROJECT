@@ -1,0 +1,146 @@
+
+.product-page-main {
+    padding: 30px 10px; /* Reduced overall padding on mobile */
+}
+
+.product-view-container {
+    display: flex;
+    flex-direction: column; /* Stacks columns on mobile by default */
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+/* Image Gallery */
+.product-image-gallery {
+    flex: 1;
+    order: 1; /* Images first on mobile */
+}
+
+.thumbnail-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center thumbnails */
+}
+
+.thumbnail-row .thumbnail {
+    width: 60px; /* Smaller thumbnails on mobile */
+    height: 60px;
+}
+
+/* Details Block */
+.product-details-block {
+    flex: 1;
+    padding: 0 10px;
+    order: 2; /* Details after images on mobile */
+}
+
+.product-details-block h1 {
+    font-size: 2em; /* Smaller heading */
+}
+
+.price {
+    font-size: 1.8em;
+}
+
+.purchase-options {
+    flex-direction: column; /* Stack quantity and button */
+    align-items: stretch;
+    gap: 15px;
+}
+
+.purchase-options .btn {
+    width: 100%; /* Full width button */
+}
+
+/* Detailed Info Accordion */
+.product-info-details {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    padding: 0 10px;
+}
+
+
+/*
+=====================================================
+TIP PAGE STYLES (MODIFIED FOR RESPONSIVENESS)
+=====================================================
+*/
+.tip-section {
+    padding: 20px 0;
+}
+
+.tip-section h2 {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.ingredient-focus-grid {
+    flex-direction: column; /* Stack ingredients vertically on mobile */
+    gap: 15px !important;
+}
+.cta-tip{
+    padding-top: 20px;
+}
+
+
+/*
+=====================================================
+MEDIA QUERIES - TABLETS AND DESKTOPS
+=====================================================
+*/
+
+/* --- Tablet Devices (>= 600px) --- */
+@media screen and (min-width: 600px) {
+
+    /* Product page layout for tablets: still stacked, but better padding */
+    .product-page-main {
+        padding: 40px 20px;
+    }
+    
+    .product-details-block h1 {
+        font-size: 2.2em;
+    }
+}
+
+
+/* --- Desktop Devices (>= 992px) --- */
+@media screen and (min-width: 992px) {
+    /* Product Page: Switch to horizontal two-column layout */
+    .product-view-container {
+        flex-direction: row;
+        gap: 60px;
+        margin: 0 auto 60px;
+    }
+    
+    .product-image-gallery {
+        order: 1;
+    }
+    
+    .product-details-block {
+        order: 2;
+    }
+
+    .product-details-block h1 {
+        font-size: 2.5em;
+    }
+
+    .purchase-options {
+        flex-direction: row; /* Horizontal layout for quantity and button on desktop */
+        align-items: center;
+    }
+
+    .purchase-options .btn {
+        width: auto;
+    }
+
+    /* Tip Page: Switch ingredient grid to horizontal */
+    .ingredient-focus-grid {
+        flex-direction: row !important;
+        gap: 30px !important;
+    }
+
+    .tip-section h2 {
+        text-align: left;
+    }
+}

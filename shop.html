@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop All Products - Mich Glow</title>
+    <link rel="stylesheet" href="shop.css"> 
+    <link rel="stylesheet" href="project.css"> 
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">Mich Glow</div>
+        <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active-link">Shop</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html" class="cart-icon">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container shop-main">
+        
+        <section id="shop-header" style="text-align: center; padding: 30px 0;">
+            <h1 style="font-size: 3em; color: var(--color-muted-olive);">Shop All Products</h1>
+            <p style="font-size: 1.1em; color: var(--color-dark-text);">Clean, cruelty-free, and effective skincare for your natural radiance.</p>
+        </section>
+
+        <div class="shop-layout">
+            
+            <aside class="sidebar-filters">
+                <h3 style="color: var(--color-peru);">Filter By:</h3>
+                
+                <div class="filter-group">
+                    <h4>Category</h4>
+                    <ul>
+                        <li><a href="#">Serums (4)</a></li>
+                        <li><a href="#">Cleansers (2)</a></li>
+                        <li><a href="#">Moisturizers (3)</a></li>
+                        <li><a href="#">Kits & Sets (1)</a></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Skin Concern</h4>
+                    <ul>
+                        <li><a href="#">Dryness</a></li>
+                        <li><a href="#">Dullness</a></li>
+                        <li><a href="#">Acne-Prone</a></li>
+                        <li><a href="#">Anti-Aging</a></li>
+                    </ul>
+                </div>
+
+                <div class="filter-group">
+                    <h4>Price Range</h4>
+                    <p>$15 - $50</p>
+                </div>
+            </aside>
+
+            <section class="product-listing-grid">
+                
+                <div class="sorting-bar">
+                    <p>Showing 1–9 of 10 results</p>
+                    <select id="sort-by" style="padding: 8px; border: 1px solid var(--color-border); border-radius: 4px;">
+                        <option value="default">Sort by Default</option>
+                        <option value="price-asc">Price: Low to High</option>
+                        <option value="price-desc">Price: High to Low</option>
+                        <option value="newest">Newest Arrivals</option>
+                    </select>
+                </div>
+
+                <div class="product-grid">
+                    
+                    <div class="product-card">
+                        <a href="product.html">
+                            <img src="/images/glow-serum-bottle.jpg" alt="Mich Glow Glow Serum">
+                            <h3 style="color: var(--color-dark-text);">Glow Serum</h3>
+                            <p class="category" style="color: var(--color-muted-olive); font-size: 0.9em;">Serums</p>
+                            <p class="price" style="color: var(--color-peru); font-weight: bold;">$45.00</p>
+                        </a>
+                        <button class="btn add-to-cart-quick">Quick Add</button>
+                    </div>
+
+                    <div class="product-card">
+                        <a href="product-2.html">
+                            <img src="https://via.placeholder.com/280x350?text=Hydrating+Cleanser" alt="Mich Glow Hydrating Cleanser">
+                            <h3 style="color: var(--color-dark-text);">Hydrating Cleanser</h3>
+                            <p class="category" style="color: var(--color-muted-olive);">Cleansers</p>
+                            <p class="price" style="color: var(--color-peru); font-weight: bold;">$28.00</p>
+                        </a>
+                        <button class="btn add-to-cart-quick">Quick Add</button>
+                    </div>
+                    
+                    <div class="product-card">
+                        <a href="product-3.html">
+                            <img src="https://via.placeholder.com/280x350?text=Revitalizing+Moisturizer" alt="Mich Glow Revitalizing Moisturizer">
+                            <h3 style="color: var(--color-dark-text);">Revitalizing Moisturizer</h3>
+                            <p class="category" style="color: var(--color-muted-olive);">Moisturizers</p>
+                            <p class="price" style="color: var(--color-peru); font-weight: bold;">$42.00</p>
+                        </a>
+                        <button class="btn add-to-cart-quick">Quick Add</button>
+                    </div>
+                    
+                    </div>
+                
+                <div class="pagination" style="text-align: center; margin-top: 40px;">
+                    <span style="font-weight: bold;">1</span>
+                    <a href="#" style="margin: 0 10px;">2</a>
+                    <a href="#">3</a>
+                    <span style="margin-left: 10px;">&gt;</span>
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mich Glow. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

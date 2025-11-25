@@ -1,11 +1,103 @@
-<!DOCTYPE html>
+     <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Skincare Tips & Guide - Mich Glow</title>
+    <link rel="stylesheet" href="project.css"> 
+    <link rel="stylesheet" href="tips.css"> 
+
 </head>
 <body>
-    <h1>my name is Mich</h1>
+
+    <header>
+    <a href="index.html" class="logo" ><img style="width: 90px; margin-left: 30px;" src="images/michlogo.png" alt="logo"></a>
+
+    <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+    </button>
+    <nav id="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main class="container">
+        
+        <section id="guide-intro" style="text-align: center; padding: 40px 0;">
+            <h1 style="font-size: 3em; color: var(--color-muted-olive);">Your Daily Glow-Up Guide</h1>
+            <p style="font-size: 1.2em; color: var(--color-dark-text);">
+                Achieving a healthy, radiant glow is a journey of self-care. We believe in simple, effective rituals that honor your skin. Start here with our founder's top tips!
+            </p>
+            <hr style="border: 0; height: 1px; background-color: var(--color-peru); max-width: 100px; margin: 30px auto;">
+        </section>
+
+        <section class="tip-section">
+            <h2 style="color: var(--color-peru);">1. Nail the Skincare Basics</h2>
+            <div class="tip-content">
+                <p>Before diving into powerful actives, make sure you have the essential foundation. A simple, consistent routine is more effective than an complicated, erratic one.</p>
+                <h3 style="color: var(--color-muted-olive);">The Mich Glow Morning Ritual:</h3>
+                <ul>
+                    <li><strong>Cleanse:</strong> Use a gentle, hydrating cleanser to remove overnight impurities without stripping your skin.</li>
+                    <li><strong>Treat/Glow:</strong> Apply a Vitamin C serum (like our *Glow Serum!*) to protect your skin from environmental stressors and boost brightness.</li>
+                    <li><strong>Protect:</strong> Finish with a broad-spectrum SPF—rain or shine, 365 days a year. This is non-negotiable for long-term skin health.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="tip-section" style="background-color: var(--color-background-header); padding: 30px; border-radius: 8px; margin: 30px 0;">
+            <h2 style="color: var(--color-peru);">2. Listen to Your Natural Ingredients</h2>
+            <div class="tip-content">
+                <p>We choose natural ingredients for their effectiveness and gentleness. Knowing what you are applying helps you treat your skin better:</p>
+                
+                <div class="ingredient-focus-grid" style="display: flex; gap: 20px;">
+                    <div style="flex: 1;">
+                        <h3 style="color: var(--color-muted-olive);">🌱 Aloe Vera</h3>
+                        <p style="font-size: 0.9em;">A powerhouse hydrator. Great for calming redness and delivering deep, soothing moisture after a long day.</p>
+                    </div>
+                    <div style="flex: 1;">
+                        <h3 style="color: var(--color-muted-olive);">🍊 Vitamin C</h3>
+                        <p style="font-size: 0.9em;">Your best friend for brightness. It fades dark spots, protects collagen, and gives that instant "Mich Glow" radiance.</p>
+                    </div>
+                    <div style="flex: 1;">
+                        <h3 style="color: var(--color-muted-olive);">🌰 Jojoba Oil</h3>
+                        <p style="font-size: 0.9em;">Mirrors your skin’s natural oils. It absorbs beautifully, balancing oil production and providing lightweight, non-comedogenic moisture.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="tip-section">
+            <h2 style="color: var(--color-peru);">3. Confidence Starts Within</h2>
+            <div class="tip-content">
+                <p>Skincare is a form of self-love, but true radiance comes from a holistic approach. These lifestyle tips enhance your glow from the inside out:</p>
+                <ul>
+                    <li><strong>Hydrate:</strong> Drink at least eight glasses of water daily. Proper hydration is the easiest way to keep skin plump and supple.</li>
+                    <li><strong>Get Your Beauty Sleep:</strong> Skin regenerates overnight. Aim for 7-9 hours to ensure your cells have time to repair and rejuvenate.</li>
+                    <li><strong>Be Kind to Yourself:</strong> Stress can trigger breakouts and inflammation. Practice mindfulness, deep breathing, and view your skincare ritual as a peaceful moment of self-connection.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta-tip" style="text-align: center; gap: 20px; padding: 40px 0;">
+            <p style="font-style: italic; color: var(--color-dark-text);">Ready to start your confident glow-up journey?</p>
+            <a href="shop.html" class="btn" style="font-size: 1.2em; line-height: 60px;">Explore Mich Glow Products</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span>MICH GLOW</span>. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
 </body>
 </html>

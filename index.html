@@ -7,20 +7,30 @@
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
+    
     <header>
-   <a href="index.html" class="logo" ><img style="width: 90px; margin-left: 30px;" src="images/michlogo.png" alt="logo"></a>
-    <nav>
+        <div c>
+    <a href="index.html" class="logo" ><img style="width: 90px; margin-left: 30px;" src="images/michlogo.png" alt="logo"></a>
+
+        </div>
+    <button class="menu-toggle" aria-controls="main-nav" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+
+    </button>
+    <nav id="main-nav">
         <ul>
-       <li><a href="#">Home</a></li>
-        <li><a href="about.html">About</a></li> 
-        <li><a href="product.html">Products</a></li>
-        <li><a href="order.html">Order</a></li>
-           <li><a href="shop.html">Shop</a></li>
-           <li><a href="tips.html">Tips</a></li>
-           <li><a href="#contact">Contacts</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="#contact">Contacts</a></li>
         </ul>
-            </nav>
-     </header>
+    </nav>
+</header>
 
     <section class="hero">
     <div class="hero-text">
@@ -80,7 +90,7 @@
     </section>
 
     <footer>
-        <p>© 2025 MICH GLOW. All rights reserved.</p>
+        <p>© 2025 <span>MICH GLOW</span>. All rights reserved.</p>
     </footer>
       <script src="script.js"></script>
 </body>

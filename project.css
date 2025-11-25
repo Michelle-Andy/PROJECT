@@ -7,39 +7,77 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.6;
-    background-color: whitesmoke;
-    color: rgb(51, 51, 51);
+:root {
+    --color-peru: #CD853F;
+    --color-muted-olive: #978F5F;
+    --color-dark-text: #333333;
+    --color-light-text: #f8f8f8;
+    --color-background-light: #fdfdfd;
+    --color-background-header: #f0ede6;
+    --color-border: #eeeeee;
 }
 
-header{
+/* Base Reset and Typography (UNCHANGED) */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background-light);
+    color: var(--color-dark-text);
+    line-height: 1.6;
+}
+/* ... other global styles ... */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/*
+=====================================================
+HEADER STYLES (MODIFIED FOR RESPONSIVENESS)
+=====================================================
+*/
+ header {
+    background-color: var(--color-background-header);
+    padding: 10px 20px; 
+    border-bottom: 1px solid var(--color-border);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.2rem 2rem 0 2rem;
-    background-color: rgb(233, 226, 226);
-    border-bottom: 1px solid pink;
 }
 
-.logo{
-    font-size: 50px;
+header .logo {
+    font-size: 1.6em; 
     font-weight: bold;
-    color: rgb(151, 143, 95);
+    color: var(--color-peru);
+    letter-spacing: 1px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 1.2rem;
+}
+nav ul li a:hover {
+    color: var(--color-peru);
 }
 
-nav a{
-    text-decoration: none;
-    color: rgb(52, 49, 49);
-    font-weight: bold;
+nav ul li {
+    margin-left: 20px; 
 }
+
+nav ul li a {
+    color: var(--color-dark-text);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8em; 
+    text-decoration: none;
+
+} 
 
 .hero{
     color: sienna;
@@ -168,4 +206,139 @@ footer{
     color: rgb(57, 56, 50);
     font-weight: bold;
     font-size: 20px;
+}
+footer span{
+    color: var(--color-peru);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav {
+     width: 100%;
+    }
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+=====================================================
+HAMBURGER MENU STYLES (MOBILE ONLY)
+=====================================================
+*/
+
+.menu-toggle {
+    display: flex; /* Initially visible on mobile */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+}
+
+.menu-toggle:focus {
+    outline: 1px dotted var(--color-peru);
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-dark-text);
+    border-radius: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hide navigation by default on mobile */
+nav {
+    display: none;
+    position: absolute;
+    top: 55px; /* Adjust based on your header height */
+    left: 0;
+    /* width: 100%; */
+    background-color: var(--color-background-header);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    padding-bottom: 10px;
+}
+
+/* Show navigation when the menu is active */
+nav.active {
+    display: block;
+}
+
+nav ul {
+    flex-direction: column; /* Stack menu items vertically */
+    align-items: center;
+}
+
+nav ul li {
+    margin: 10px 20px; 
+    width: 100%;
+    
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    padding: 8px 0;
+    font-size: 1.1em;
+}
+
+/* Hamburger transition for 'X' icon */
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* Adjust the Media Query for Desktop to remove the hamburger */
+@media screen and (min-width: 992px) {
+    
+    /* Show the standard desktop navigation */
+    nav {
+        display: flex !important;
+        position: static;
+        box-shadow: none;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        
+    }
+    
+    /* Hide the hamburger icon on desktop */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* ... all other existing desktop styles ... */
 }

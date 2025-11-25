@@ -94,3 +94,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+// 5. Hamburger Menu Toggle Functionality
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    if (menuToggle && mainNav) {
+        menuToggle.addEventListener('click', () => {
+            // Toggle the 'active' class on the menu button itself (for the 'X' animation)
+            menuToggle.classList.toggle('active');
+            
+            // Toggle the 'active' class on the navigation element to show/hide the menu
+            mainNav.classList.toggle('active');
+
+            // Accessibility: Update aria-expanded state
+            const isExpanded = menuToggle.classList.contains('active');
+            menuToggle.setAttribute('aria-expanded', isExpanded);
+        });
+
+        // Close menu when a link is clicked (important for single-page apps or mobile UX)
+        mainNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                mainNav.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', false);
+            });
+        });
+    } 
